@@ -1,70 +1,65 @@
-# Getting Started with Create React App
+# Calendar App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 프로젝트 설명
 
-## Available Scripts
+이 프로젝트는 React.js와 And-Design을 사용하여 개발한 일정(캘린더) 관리 앱입니다. 사용자는 특정 날짜를 선택하여 해당 날짜에 일정을 추가, 수정, 삭제할 수 있습니다. 앱은 기본적으로 월간 뷰를 제공하며, 각 날짜를 클릭하여 해당 날짜에 관련된 일정들을 확인하고 관리할 수 있습니다.
 
-In the project directory, you can run:
+### 주요 기능:
+- **일정 조회**: 사용자는 특정 날짜를 클릭하여 해당 날짜의 일정을 확인할 수 있습니다.
+- **일정 추가**: 사용자는 제목과 설명을 입력하여 새로운 일정을 추가할 수 있습니다.
+- **일정 수정**: 기존 일정을 선택하여 제목과 설명을 수정할 수 있습니다.
+- **일정 삭제**: 사용자는 일정을 삭제할 수 있습니다.
+- **월간 보기**: 사용자는 월간 달력을 보고 날짜별 일정을 관리할 수 있습니다.
 
-### `npm start`
+## 사용 기술
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **React.js v18**
+- **And-Design v4**
+- **CSS** (스타일링)
+- **Fetch API** (서버와의 데이터 통신)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 설치 방법
 
-### `npm test`
+1. **프로젝트 클론**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+   GitHub에서 프로젝트를 클론합니다.
 
-### `npm run build`
+   ```bash
+   git clone https://github.com/yourusername/calendar-app.git
+의존성 설치 및 앱 실행
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+프로젝트 디렉토리로 이동 후, 필요한 의존성을 설치하고 로컬 서버에서 앱을 실행합니다.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+bash
+코드 복사
+cd calendar-app
+npm install && npm start
+브라우저에서 http://localhost:3000으로 접속하면 앱을 사용할 수 있습니다.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+주요 컴포넌트 설명
+CalendarModal 컴포넌트
+기능: 사용자가 선택한 날짜에 대한 일정을 추가, 수정, 삭제할 수 있는 모달을 렌더링합니다.
+주요 특징:
+날짜에 해당하는 일정들을 불러와 표시합니다.
+일정 제목과 설명을 수정하거나 새 일정을 추가할 수 있습니다.
+일정 수정 후 저장, 삭제 후 확인 메시지를 표시합니다.
+일정 추가/수정/삭제 기능을 위한 버튼들을 제공합니다.
+Calendar 컴포넌트
+기능: 월별 캘린더 뷰를 렌더링합니다. 사용자가 날짜를 선택하면 해당 날짜의 일정을 보여주는 CalendarModal을 호출합니다.
+주요 특징:
+currentDate에 해당하는 월을 기준으로 날짜들을 출력합니다.
+각 날짜에 대해 이벤트를 표시하며, 클릭 시 해당 날짜의 일정을 수정/추가할 수 있는 모달을 띄웁니다.
+nextMonth, lastMonth 버튼을 통해 사용자는 달력을 이전 또는 다음 달로 탐색할 수 있습니다.
+데이터 통신
+서버와의 통신: fetch API를 사용하여 로컬 서버 (localhost:8080)와 데이터 통신을 합니다.
+일정 조회, 추가, 수정, 삭제 기능을 위한 API 호출을 수행합니다.
+go
+코드 복사
 
-### `npm run eject`
+이제 위 내용을 그대로 `README.md`에 붙여넣으면 됩니다!
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
