@@ -10,33 +10,9 @@ React.js 프론트엔드와 RESTful API로 통신하며, 데이터를 MySQL 데�
 ## 2. 소스 빌드 및 실행 방법
 
 ### 2.1. **필요 환경**
-- Java 17 이상
-- Gradle 7.x 이상
-- MySQL 8.0 이상
-- Node.js (React 프론트엔드 실행용)
-
-### 2.2. **백엔드 실행 방법**
-
-1. **프로젝트 클론**
-   ```bash
-   git clone <레포지토리 주소>
-   cd <프로젝트 폴더>
-# 캘린더 관리 애플리케이션
-
-## 1. 프로젝트 설명
-
-이 프로젝트는 Spring Boot를 기반으로 한 캘린더 일정 관리 애플리케이션입니다.  
-사용자는 월별 또는 특정 날짜의 일정을 조회하고, 새로운 일정을 추가, 수정, 삭제할 수 있습니다.  
-React.js 프론트엔드와 RESTful API로 통신하며, 데이터를 MySQL 데이터베이스에 저장합니다.
-
----
-
-## 2. 소스 빌드 및 실행 방법
-
-### 2.1. **필요 환경**
-- Java 17 이상
-- Gradle 7.x 이상
-- MySQL 8.0 이상
+- Java 17.0.10
+- Gradle 8.11.1
+- MySQL 8.0.40
 - Node.js (React 프론트엔드 실행용)
 
 ### 2.2. **백엔드 실행 방법**
@@ -58,12 +34,6 @@ spring:
     url: jdbc:mysql://localhost:3306/calendar_db
     username: root
     password: yourpassword
-    
-**기초 데이터 로드**
-
--db_backup.sql 파일을 이용해 초기 데이터를 로드합니다:
-
-mysql -u root -p calendar_db < db_backup.sql
 
 **백엔드 실행**
 
