@@ -99,6 +99,7 @@ CREATE DATABASE calendar_db CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 ### 7.데이터베이스 스키마
 **스키마 구조**
 
+
 CREATE TABLE calendar (
 
     id BIGINT AUTO_INCREMENT PRIMARY KEY,
@@ -114,6 +115,7 @@ CREATE TABLE calendar (
     updated_at TIMESTAMP
     
 );
+
 
 ### 8. 프로젝트 목표
 이 애플리케이션은 React.js와 Spring Boot를 활용하여 일정 관리 시스템을 구축하고, 데이터와 UI 간의 효율적인 상호작용을 학습하기 위해 제작되었습니다.MySQL 데이터베이스 설정
