@@ -19,7 +19,7 @@ React.js 프론트엔드와 RESTful API로 통신하며, 데이터를 MySQL 데�
 
 1. **프로젝트 클론**
    ```bash
-   git clone <레포지토리 주소>
+   git clone https://github.com/kyj001208/Calendar-API.git
    cd <프로젝트 폴더>
    
 ### 2.3 **MySQL 데이터베이스 설정**
