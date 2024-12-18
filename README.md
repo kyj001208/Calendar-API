@@ -100,12 +100,19 @@ CREATE DATABASE calendar_db CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 **스키마 구조**
 
 CREATE TABLE calendar (
+
     id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    
     title VARCHAR(255) ,
+    
     description VARCHAR(255),
+    
     selected_date DATE ,
+    
     created_at TIMESTAMP ,
+    
     updated_at TIMESTAMP
+    
 );
 
 ### 8. 프로젝트 목표
