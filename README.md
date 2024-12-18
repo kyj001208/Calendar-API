@@ -30,9 +30,13 @@ CREATE DATABASE calendar_db CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 **기본 사용자와 비밀번호 설정(변경 시 application.yml에 반영)**
 
 spring:
+
   datasource:
+  
     url: jdbc:mysql://localhost:3306/calendar_db
+    
     username: root
+    
     password: yourpassword
 
 **백엔드 실행**
