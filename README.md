@@ -44,12 +44,16 @@ CREATE DATABASE calendar_db CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
 **Spring Boot**
 사용 이유: 빠르고 효율적인 RESTful API 구축을 지원하며, 데이터베이스 연동과 비즈니스 로직을 간편하게 처리할 수 있습니다.
+
 **Lombok**
 사용 이유: 코드 간소화를 위해 Getter/Setter, Builder 패턴, Constructor 자동 생성을 활용.
+
 **Hibernate/JPA**
 사용 이유: 객체와 데이터베이스 간의 매핑을 효율적으로 관리하며, 데이터 접근 레이어를 간소화.
+
 **MySQL**
 사용 이유: 관계형 데이터베이스로 일정 관리에 적합하며, 안정적인 데이터 처리.
+
 **Gradle**
 사용 이유: 프로젝트 종속성을 효율적으로 관리하고, 빌드 속도가 빠름.
 
